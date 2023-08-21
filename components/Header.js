@@ -1,32 +1,13 @@
 import React from "react";
 
 const Header = () => (
-  <header className="fixed top-0 left-0 right-0 z-10 bg-white shadow-md flex items-center justify-between px-6 py-4">
-    <h1 className="text-xl font-bold">Company Name</h1>
-    <nav>
-      <ul className="flex space-x-4">
-        <li>
-          <a href="#" className="text-gray-800 hover:text-black">
-            Home
-          </a>
-        </li>
-        <li>
-          <a href="#" className="text-gray-800 hover:text-black">
-            About
-          </a>
-        </li>
-        <li>
-          <a href="#" className="text-gray-800 hover:text-black">
-            Services
-          </a>
-        </li>
-        <li>
-          <a href="#" className="text-gray-800 hover:text-black">
-            Contact
-          </a>
-        </li>
-      </ul>
-    </nav>
+  <header className="flex items-center justify-between bg-gray-900 p-4">
+    <img
+      src="https://source.unsplash.com/random"
+      alt="Company Logo"
+      className="w-12 h-12 rounded-full"
+    />
+    <h1 className="text-white text-lg font-semibold ml-2">Company Name</h1>
   </header>
 );
 
