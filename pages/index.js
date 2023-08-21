@@ -1,16 +1,10 @@
-import Image from 'next/image'
-import { Inter } from 'next/font/google'
-
-const inter = Inter({ subsets: ['latin'] })
+import MainLayout from "@/layout/Layout";
+import HeroBanner from "@/components/HeroBanner";
 
 export default function Home() {
   return (
-    <main
-      className={`flex min-h-screen flex-col items-center justify-between p-24 ${inter.className}`}
-    >
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-          <h1>Hello World</h1>
-      </div>
-    </main>
-  )
+    <MainLayout>
+      <HeroBanner />
+    </MainLayout>
+  );
 }
